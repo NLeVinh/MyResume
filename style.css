@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+}
+body * {
+  font-size: .75rem;
+  line-height: 1.5;
+}
+body i {
+  line-height: 0;
+}
+main {
+  width: 100vw;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+}
+.my-resume {
+  width: 794px; /* Width cố định theo A4 */
+  flex-shrink: 0; /* Ngăn bóp chiều rộng khi thu nhỏ */
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+div.section-left {
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+  background: linear-gradient(135deg, #f6f2ee92 0%, #b3b9c17e 70%, #3238417c 100%);
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  width: 30%;
+}
+div.left-part {
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+  align-items: center;
+}
+
+div.divider {
+    height: 1px;
+    border: none;
+    background: linear-gradient(to right, transparent, #ccc, transparent);
+    margin: .5rem 0;
+}
+div.my-image-box {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+  div.my-image-box img.my-image {
+    width: 100%;
+    box-shadow: 2rem black;
+  }
+span.my-title {
+  background: linear-gradient(-5deg,#FFAB57,  #AA895F);
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+div.left-part-title {
+  align-self: flex-start;
+  background: linear-gradient(-5deg,#FFAB57,  #AA895F);
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: .125rem;
+  font-size: .8rem;
+}
+div.info-part {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: .375rem;
+
+}
+div.info-part i {
+  padding: 0.5rem;
+  background-color: #b3b9c17e;
+  color: #000000;
+  border-radius: 50%;
+}
+div.info-part > div {
+  display: flex;
+  flex-flow: column;
+}
+div.info-part > div span:first-child {
+  font-size: 0.65rem;
+}
+div.skill-part {
+  align-self: flex-start;
+}
+div.skill-part > i {
+  font-size: .35rem;
+  vertical-align: middle;
+  background: linear-gradient(-5deg,#FFAB57,  #ffc890);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+div.skill-part > span:nth-child(2) {
+  font-weight: 700;
+}
+div.skill-icon-list {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+span.skill-icon-item {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: .25rem;
+  background-color: #b3b9c17e;
+  padding: .375rem;
+  border-radius: .5rem;
+}
+span.skill-icon-item img.skill-icon-img {
+  height: 1rem;
+}
+
+
+div.section-right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 70%;
+}
+div.right-part {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  column-gap: .5rem;
+}
+div.right-part > i:first-child {
+  color: #000000;
+}
+div.right-part > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+  justify-content: center;
+  flex: 1;
+}
+div.right-part-title {
+  font-size: 1rem;
+  line-height: 1.75;
+  background: linear-gradient(10deg,#FFAB57,  #AA895F);
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+div.right-part > i {
+  padding: .125rem;
+  border-radius: .5rem;
+  background-color: #b3b9c17e;
+  font-size: 1rem;
+  padding: .375rem;
+}
+div.right-part-content {
+  background: linear-gradient(135deg, #f6f2ee92 0%, #b3b9c17e 70%);
+  border-radius: .5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: .75rem;
+  text-align: justify;
+}
+div.right-part-content.edu-part, div.right-part-content.exp-part, div.right-part-content.prj-part {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+  column-gap: .5rem;
+  row-gap: .125rem;
+}
+div.right-part-content.edu-part img.edu-school-logo, div.right-part-content.exp-part img.exp-company-logo, div.right-part-content.prj-part img.prj-logo {
+  width: 1.5rem;
+  padding: .5rem;
+  background-color: #ffffff;
+  border-radius: .5rem;
+}
+div.right-part-content.edu-part span.edu-school-name, div.right-part-content.exp-part span.exp-company-name, div.right-part-content.prj-part span.prj-belong-name {
+  font-weight: 700;
+}
+div.right-part-content.edu-part span.edu-course-time, div.right-part-content.exp-part span.exp-company-time, div.right-part-content.prj-part span.prj-time {
+  font-style: italic;
+}
+div.right-part-content.edu-part div.edu-part-detail, div.right-part-content.exp-part div.exp-part-detail, div.right-part-content.prj-part div.prj-part-detail { 
+  grid-column: 2 / 4;
+  display: flex;
+  flex-direction: column;
+  row-gap: .25rem;
+}
+div.right-part-content.edu-part div.edu-part-detail span i, div.right-part-content.exp-part div.exp-part-detail span i, div.right-part-content.prj-part div.prj-part-detail span i {
+  background: linear-gradient(90deg, #6A5ACD, #9F79EE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 0.35rem;
+  vertical-align: middle;
+}
+div.right-part-content.exp-part div.exp-part-detail span.exp-tech-stack, div.right-part-content.prj-part div.prj-part-detail span.prj-tech-stack {
+  font-weight: 700;
+}
+div.right-part-content.exp-part div.exp-part-detail span.exp-tech-stack img, div.right-part-content.prj-part div.prj-part-detail span.prj-tech-stack img {
+  height: 1rem;
+  vertical-align: middle;
+}
+div.right-part-content.exp-part div.exp-part-detail span.exp-tech-stack img.need-background {
+  background-color: #ffffff;
+}
