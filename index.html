@@ -3,21 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Resume</title>
+  <title>Nguyen Le Vinh - Fullstack .NET Developer</title>
   <link href="./style.css" rel='stylesheet'>
   <link href="./lib/bootstrap-icon/font/bootstrap-icons.min.css" rel='stylesheet'>
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
 <body>
   <main>
+    <button id="download-pdf-btn" class="download-btn" type="button" aria-describedby="pdf-status">
+      <i class="bi bi-download"></i> Download PDF
+    </button>
+    <p id="pdf-status" class="pdf-status" role="status" aria-live="polite"></p>
     <div class="my-resume">
+      <div class="resume-top">
         <div class="section-left">
             <div class="left-part">
                 <div class="my-image-box">
                   <img class="my-image" src="./assets/My-Photo-Profile.jpg"/>
                 </div>
                 <span>NGUYEN LE VINH</span>
-                <span class="my-title">Web Developer</span>
+                <span class="my-title">Fullstack .NET Developer</span>
             </div>
             <div class="divider"></div>
             <div class="left-part">
@@ -43,20 +47,6 @@
                   <span>Ho Chi Minh City</span>
                 </div>
               </div>
-              <div class="info-part">
-                <i class="bi bi-github"></i>
-                <div>
-                  <span>Github</span>
-                  <span>https://github.com/NLeVinh</span>
-                </div>
-              </div>
-              <div class="info-part">
-                <i class="bi bi-cake2"></i>
-                <div>
-                  <span>Date of birth</span>
-                  <span>22/08/2001</span>
-                </div>
-              </div>
             </div>
             <div class="divider"></div>
             <div class="left-part">
@@ -64,139 +54,151 @@
               <div class="skill-part">
                 <i class="bi bi-hexagon-fill"></i>
                 <span>Programming Languages:</span>
-                <span>C#, Javascript, TypeScript, HTML, CSS (SCSS)</span>
+                <span>C#, JavaScript, TypeScript, HTML, CSS (SCSS), Python.</span>
               </div>
               <div class="skill-part">
                 <i class="bi bi-hexagon-fill"></i>
-                <span>Frameworks & Libraries:</span>
-                <span>ASP.NET MVC, .NET Core, Angular, ReactJS, Vue.js</span>
+                <span>Frameworks &amp; Technologies:</span>
+                <span>ASP.NET Core, ASP.NET Framework/MVC, Angular, Vue.js, ReactJS.</span>
               </div>
               <div class="skill-part">
                 <i class="bi bi-hexagon-fill"></i>
-                <span>Web Technologies:</span>
-                <span>Ajax, jQuery, Redux, NgRx</span>
+                <span>Backend Development:</span>
+                <span>RESTful APIs, Dependency Injection, Autofac, JWT Authentication</span>
               </div>
               <div class="skill-part">
                 <i class="bi bi-hexagon-fill"></i>
-                <span>Databases & ORM:</span>
-                <span>MS SQL Server, MySQL, ADO.NET, Entity Framework</span>
+                <span>Database, ORM:</span>
+                <span>SQL Server, MySQL, ADO.NET, Entity Framework, Stored Procedures, Complex Queries</span>
               </div>
               <div class="skill-part">
                 <i class="bi bi-hexagon-fill"></i>
-                <span>Tools:</span>
-                <span>Git, SVN, TortoiseSVN, Postman</span>
+                <span>Frontend Development:</span>
+                <span>Component-based Architecture, NgRx, Responsive UI Development</span>
               </div>
               <div class="skill-part">
                 <i class="bi bi-hexagon-fill"></i>
-                <span>Development Methodologies:</span>
-                <span>Scrum, Agile</span>
+                <span>DevOps &amp; Tools:</span>
+                <span>Docker, GitHub Actions, Jenkins, JFrog/Nexus Artifactory, Git, SVN, Postman</span>
               </div>
               <div class="skill-part">
                 <i class="bi bi-hexagon-fill"></i>
-                <span>Responsive Web Design</span>
+                <span>Application Security:</span>
+                <span>SQL Injection, XSS Remediation, Secret Management / Exposed Secret Remediation</span>
               </div>
               <div class="skill-part">
                 <i class="bi bi-hexagon-fill"></i>
-                <span>Debugging and Troubleshooting</span>
+                <span>Caching &amp; Messaging:</span>
+                <span>Redis (basic), Kafka (logging)</span>
               </div>
               <div class="skill-part">
                 <i class="bi bi-hexagon-fill"></i>
-                <span>Strong Problem-Solving Skills</span>
-              </div>
-              <div class="skill-part">
-                <i class="bi bi-hexagon-fill"></i>
-                <span>Team Collaboration & Communication</span>
-              </div>
-              <div class="skill-part">
-                <i class="bi bi-hexagon-fill"></i>
-                <span>English:</span>
-                <span>Good communication</span>
+                <span>Software Practices:</span>
+                <span>OOP, Debugging &amp; Troubleshooting, Agile/Scrum, Cross-team Collaboration</span>
               </div>
               <div class="skill-icon-list">
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=cs" alt="html-icon"/>
+                  <img class="skill-icon-img" src="./assets/skill-icons/cs.svg" alt="html-icon"/>
                   C#
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=html" alt="html-icon"/>
+                  <img class="skill-icon-img" src="./assets/skill-icons/html.svg" alt="html-icon"/>
                   HTML
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=css" alt="html-icon"/>
+                  <img class="skill-icon-img" src="./assets/skill-icons/css.svg" alt="html-icon"/>
                   CSS
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=scss" alt="html-icon"/>
-                  Scss
+                  <img class="skill-icon-img" src="./assets/skill-icons/scss.svg" alt="html-icon"/>
+                  SCSS
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=js" alt="html-icon"/>
-                  Javascript
+                  <img class="skill-icon-img" src="./assets/skill-icons/js.svg" alt="html-icon"/>
+                  JavaScript
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=ts" alt="html-icon"/>
+                  <img class="skill-icon-img" src="./assets/skill-icons/ts.svg" alt="html-icon"/>
                   TypeScript
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=dotnet" alt="html-icon"/>
+                  <img class="skill-icon-img" src="./assets/skill-icons/dotnet.svg" alt="html-icon"/>
                   ASP.NET MVC/Core
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=angular" alt="html-icon"/>
+                  <img class="skill-icon-img" src="./assets/skill-icons/angular.svg" alt="html-icon"/>
                   Angular
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=react" alt="html-icon"/>
+                  <img class="skill-icon-img" src="./assets/skill-icons/react.svg" alt="html-icon"/>
                   ReactJS
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=vue" alt="html-icon"/>
+                  <img class="skill-icon-img" src="./assets/skill-icons/vue.svg" alt="html-icon"/>
                   Vue
-                </span>
-                <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=redux" alt="html-icon"/>
-                  Redux
                 </span>
                 <span class="skill-icon-item">
                   <img class="skill-icon-img" src="./assets/skill-icons/devicon--ngrx.svg" alt="html-icon"/>
                   NgRx
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=jquery" alt="html-icon"/>
-                  jQuery
-                </span>
-                <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=git" alt="html-icon"/>
+                  <img class="skill-icon-img" src="./assets/skill-icons/git.svg" alt="html-icon"/>
                   Git
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=postman" alt="html-icon"/>
+                  <img class="skill-icon-img" src="./assets/skill-icons/postman.svg" alt="html-icon"/>
                   Postman
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=figma" alt="html-icon"/>
-                  Figma
-                </span>
-                <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=bootstrap" alt="html-icon"/>
-                  Bootstrap
-                </span>
-                <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=python" alt="html-icon"/>
+                  <img class="skill-icon-img" src="./assets/skill-icons/python.svg" alt="html-icon"/>
                   Python
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=kafka" alt="html-icon"/>
-                  Kafka
+                  <img class="skill-icon-img" src="./assets/skill-icons/kafka.svg" alt="html-icon"/>
+                  Kafka (logging)
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=redis" alt="html-icon"/>
-                  Redis
+                  <img class="skill-icon-img" src="./assets/skill-icons/redis.svg" alt="html-icon"/>
+                  Redis (basic)
                 </span>
                 <span class="skill-icon-item">
-                  <img class="skill-icon-img" src="https://skillicons.dev/icons?i=firebase" alt="html-icon"/>
-                  Firebase
+                  <img class="skill-icon-img" src="./assets/skill-icons/docker.svg" alt="Docker icon"/>
+                  Docker
                 </span>
+                <span class="skill-icon-item">
+                  <img class="skill-icon-img" src="./assets/skill-icons/githubactions.svg" alt="GitHub Actions icon"/>
+                  GitHub Actions
+                </span>
+                <span class="skill-icon-item">
+                  <img class="skill-icon-img" src="./assets/skill-icons/jenkins.svg" alt="Jenkins icon"/>
+                  Jenkins
+                </span>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="left-part">
+              <div class="left-part-title">CERTIFICATION</div>
+              <div class="skill-part">
+                <i class="bi bi-hexagon-fill"></i>
+                <span>Applications of AI for Anomaly Detection</span>
+                <br/><span>NVIDIA</span>
+              </div>
+              <div class="skill-part">
+                <i class="bi bi-hexagon-fill"></i>
+                <span>TOEIC LR 690</span>
+              </div>
+              <div class="skill-part">
+                <i class="bi bi-hexagon-fill"></i>
+                <span>VSTEP B2 Level</span>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="left-part">
+              <div class="left-part-title">AWARD</div>
+              <div class="skill-part">
+                <i class="bi bi-hexagon-fill"></i>
+                <span>Academic Encouragement Scholarship</span>
+                <br/><span>2020-2021, 2021-2022</span>
               </div>
             </div>
         </div>
@@ -205,11 +207,12 @@
             <i class="bi bi-person-fill"></i>
             <div>
               <div class="right-part-title">
-                ABOUT ME
+                PROFILE SUMMARY
               </div>
               <div class="right-part-content">
-                I am a passionate Web Developer focused on building high-quality, modern web applications. With hands-on experience and a self-taught background, I specialize in user-centered solutions with strong logic and clear requirements. I have hands-on experience with front-end frameworks like Angular, Vue.js, and React, along with back-end development in ASP.NET. I'm also skilled in working with databases such as MSSQL Server and MySQL to build scalable, data-driven applications.
-                <br/>I am looking for a company that will help me enhance my skills. I am always ready to learn and adapt to new technologies to ensure high work performance and make meaningful contributions to the company's projects.              </div>
+                Fullstack .NET Developer with over 4 years of experience building, maintaining, and integrating enterprise web applications using C#, ASP.NET Core, ASP.NET Framework, Angular, and Vue.js. Experienced in RESTful API development, third-party integration, application migration, and security remediation.
+                <br/>Hands-on experience with CI/CD workflows, Docker, GitHub Actions, and Jenkins, with a strong focus on application security, code quality, and system reliability. Experienced in collaborating with cross-functional teams throughout the software development lifecycle.
+              </div>
             </div>
           </div>
           <div class="right-part">
@@ -220,8 +223,8 @@
               </div>
               <div class="right-part-content edu-part">
                 <img class="edu-school-logo" src="./assets/Logo_UIT_updated.svg" alt="logo-UIT"/>
-                <span class="edu-school-name">University of Information Technology (UIT) - VNUHCM</span>
-                <span class="edu-course-time">12/2024 - now</span>
+                <span class="edu-school-name">University of Information Technology - VNU HCM</span>
+                <span class="edu-course-time">12/2024 - Present</span>
                 <div class="edu-part-detail">
                   <span>
                     <i class="bi bi-hexagon-fill"></i>
@@ -231,8 +234,8 @@
               </div>
               <div class="right-part-content edu-part">
                 <img class="edu-school-logo" src="./assets/Logo_UIT_updated.svg" alt="logo-UIT"/>
-                <span class="edu-school-name">University of Information Technology (UIT) - VNUHCM</span>
-                <span class="edu-course-time">9/2019 - 6/2023</span>
+                <span class="edu-school-name">University of Information Technology - VNU HCM</span>
+                <span class="edu-course-time">09/2019 - 06/2023</span>
                 <div class="edu-part-detail">
                   <span>
                     <i class="bi bi-hexagon-fill"></i>
@@ -240,7 +243,7 @@
                   </span>
                   <span>
                     <i class="bi bi-hexagon-fill"></i>
-                    GPA: 8.73
+                    GPA: 8.73/10
                   </span>
                 </div>
               </div>
@@ -250,328 +253,208 @@
             <i class="bi bi-building-fill"></i>
             <div>
               <div class="right-part-title">
-                EXPERIENCES
+                WORK EXPERIENCE
               </div>
               <div class="right-part-content exp-part">
-                <img class="exp-company-logo" src="./assets/Logo_XSUNT.jpeg" alt="logo-XSUNT"/>
+                <img class="exp-company-logo" src="./assets/Logo_Amaris.jpeg" alt="Amaris Consulting logo"/>
+                <span class="exp-company-name">Amaris Consulting - .NET Consultant</span>
+                <span class="exp-company-time">07/2026 - Present</span>
+                <div class="exp-part-detail">
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Contributed to an enterprise application integration and migration project for a global insurance client, supporting the transition of existing applications and services across enterprise environments.
+                  </span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Upgraded Docker base images for OpenL WebStudio and WebService, working with Dockerfiles and existing GitHub Actions workflows to build and publish customized images to JFrog Artifactory.
+                  </span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Developed and integrated OPSWAT file-scanning services using RESTful APIs across multiple .NET applications, supporting secure file upload and download workflows.
+                  </span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Applied Autofac-based dependency injection to register and manage application services, ensuring seamless integration with existing system architecture.
+                  </span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Worked with GitHub Actions and Jenkins CI/CD pipelines to support application builds, artifact management, and deployments across different environments.
+                  </span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Identified and resolved application security vulnerabilities reported by AppScan, including SQL Injection, Cross-Site Scripting (XSS), and exposed secrets in source repositories.
+                  </span>
+                  <span class="exp-tech-stack">Key Achievements:</span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Integrated OPSWAT file-scanning functionality across multiple applications, strengthening file security controls and ensuring consistent validation during file handling.
+                  </span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Improved application security by remediating vulnerabilities and exposed-secret issues identified during security assessments.
+                  </span>
+                </div>
+              </div>
+              <div class="right-part-content exp-part">
+                <img class="exp-company-logo" src="./assets/Logo_XSUNT.jpeg" alt="XSUNT Corp logo"/>
                 <span class="exp-company-name">XSUNT Corp - Web Developer</span>
-                <span class="exp-company-time">12/2023 - now</span>
+                <span class="exp-company-time">12/2023 - 04/2026</span>
                 <div class="exp-part-detail">
                   <span>
                     <i class="bi bi-hexagon-fill"></i>
-                    Maintain and enhance company's CRM website, ensuring smooth operation and data visualization for business needs. Developed features for data export (Excel, PowerPoint).
+                    Developed and maintained fullstack features for a CRM-based dashboard system using ASP.NET Core, Vue.js, and RESTful APIs, supporting dynamic data visualization and reporting.
                   </span>
                   <span>
                     <i class="bi bi-hexagon-fill"></i>
-                    Generated comprehensive statistical reports using Vue for the frontend.
+                    Enhanced backend services to support automated report generation, enabling dynamic data mapping into predefined templates.
                   </span>
                   <span>
                     <i class="bi bi-hexagon-fill"></i>
-                    Created customizable templates for tables and charts using HighChart and VXE-Table.
+                    Built interactive frontend components with dynamic filtering capabilities, allowing users to customize data queries and visualization.
+                  </span>
+                  <span class="exp-tech-stack">Key Achievements:</span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Implemented automated PowerPoint and Excel reporting, supporting multiple slides/sheets with dynamic data mapping to improve reporting efficiency.
                   </span>
                   <span>
                     <i class="bi bi-hexagon-fill"></i>
-                    Automated report export to PowerPoint and Excel via ASP.NET API.
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Migrated and upgraded API services to .NET 8 for enhanced performance and maintainability.
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Maintained and enhanced features for a medical business web system using the ASP.NET MVC framework.
-                  </span>
-                  <span class="exp-tech-stack">
-                    <i class="bi bi-hexagon-fill"></i>
-                    Toolkits & Libraries: HighChart, VXE-Table, PptGenJS, ElementUI.
-                  </span>
-                  <span class="exp-tech-stack">
-                    <i class="bi bi-hexagon-fill"></i>
-                    Programming & Frameworks:
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=html" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=css" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=js" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=ts" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=cs" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=vue" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=dotnet" alt="cs-icon"/>
+                    Designed and developed a dynamic filtering system, enhancing dashboard usability and enabling flexible data exploration.
                   </span>
                 </div>
               </div>
               <div class="right-part-content exp-part">
-                <img class="exp-company-logo" src="./assets/Logo_FPTTelecom.jpg" alt="logo-FPT"/>
+                <img class="exp-company-logo" src="./assets/Logo_FPTTelecom.jpg" alt="FPT Telecom logo"/>
                 <span class="exp-company-name">FPT Telecom - Web Developer</span>
-                <span class="exp-company-time">5/2022 - 12/2023</span>
+                <span class="exp-company-time">05/2022 - 12/2023</span>
                 <div class="exp-part-detail">
                   <span>
                     <i class="bi bi-hexagon-fill"></i>
-                    Developed web applications for internal management with a team.
+                    Developed fullstack applications using ASP.NET Core and Angular for internal enterprise systems.
                   </span>
                   <span>
                     <i class="bi bi-hexagon-fill"></i>
-                    Built UI components using Angular/ReactJS, and service APIs with ASP.NET Core (C#).
+                    Applied NgRx for state management to build scalable and maintainable frontend applications.
                   </span>
                   <span>
                     <i class="bi bi-hexagon-fill"></i>
-                    Used ASP.NET Core (C#) to built service API for system and manipulate data in database using ADO.NET.                  </span>
+                    Developed SQL Server queries and stored procedures to support business logic and data processing.
+                  </span>
+                  <span class="exp-tech-stack">Key Achievements:</span>
                   <span>
                     <i class="bi bi-hexagon-fill"></i>
-                    Improved application performance by optimizing code and fixing bugs.
+                    Implemented Quartz.NET scheduling for automated task execution and time-based workflows.
                   </span>
                   <span>
                     <i class="bi bi-hexagon-fill"></i>
-                    Conducted thorough testing and pentesting before deployment.
-                  </span>
-                  <span class="exp-tech-stack">
-                    <i class="bi bi-hexagon-fill"></i>
-                    Programming & Frameworks:
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=html" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=css" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=js" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=ts" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=cs" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=angular" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=react" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=dotnet" alt="cs-icon"/>
-                  </span>
-                  <span class="exp-tech-stack">
-                    <i class="bi bi-hexagon-fill"></i>
-                    Frontend Technologies:
-                    <img class="exp-tech-stack-icon" src="./assets/skill-icons/devicon--primeng.svg" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="./assets/skill-icons/devicon--ngrx.svg" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="./assets/skill-icons/devicon--antdesign.svg" alt="cs-icon"/>
-                  </span>
-                  <span class="exp-tech-stack">
-                    <i class="bi bi-hexagon-fill"></i>
-                    Backend & Middleware:
-                    <img class="exp-tech-stack-icon" src="https://skillicons.dev/icons?i=kafka" alt="cs-icon"/>
+                    Optimized SQL queries and stored procedures to improve system performance.
                   </span>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="right-part">
-            <i class="bi bi-motherboard-fill"></i>
-            <div>
-              <div class="right-part-title">
-                PROJECTS
-              </div>
-              <div class="right-part-content prj-part">
-                <img class="prj-logo" src="./assets/Logo_MAxOneLook.png" alt="logo-MAx"/>
-                <span class="prj-belong-name">XSUNT Corp: MAx - OneLook Project</span>
-                <span class="prj-time">12/2023 - now</span>
-                <div class="prj-part-detail">
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Description: Dashboard for data visualization with table and chart components.
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Team size: 5.
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    My position: Web Developer.
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    My responsibilities:
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      Development
-                    </span>
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      Maintenance
-                    </span>
-                  </span>
-                  <span class="prj-tech-stack">
-                    <i class="bi bi-hexagon-fill"></i>
-                    Technologies used:
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=html" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=css" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=js" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=ts" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=cs" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=vue" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=dotnet" alt="cs-icon"/>
-                  </span>
-                </div>
-              </div>
-              <div class="right-part-content prj-part">
-                <img class="prj-logo" src="./assets/Logo_InsideNextgen.png" alt="logo-InsideNextgen"/>
-                <span class="prj-belong-name">FPT Telecom: Inside Nextgen</span>
-                <span class="prj-time">09/2022 - 04/2023</span>
-                <div class="prj-part-detail">
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Customer: FPT Telecom
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Description: Centralized management platform for internal applications.
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Team size: 8.
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    My position: Developer.
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    My responsibilities:
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      Development
-                    </span>
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      Optimize code
-                    </span>
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      Bug fixing
-                    </span>
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      Maintainer
-                    </span>
-                  </span>
-                  <span class="prj-tech-stack">
-                    <i class="bi bi-hexagon-fill"></i>
-                    Technologies used:
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=html" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=css" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=js" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=ts" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=cs" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="./assets/skill-icons/devicon--primeng.svg" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="./assets/skill-icons/devicon--ngrx.svg" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=dotnet" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=angular" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=kafka" alt="cs-icon"/>
-                  </span>
-                </div>
-              </div>
-              <div class="right-part-content prj-part">
-                <img class="prj-logo" src="./assets/Logo_Reminder.png" alt="logo-Reminder"/>
-                <span class="prj-belong-name">FPT Telecom: Reminder</span>
-                <span class="prj-time">04/2023 - 09/2023</span>
-                <div class="prj-part-detail">
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Customer: FPT Telecom
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Description:
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      Personal work management application.
-                    </span>
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      Centralizes and visualizes tasks from applications integrated in Inside Nextgen and user-created tasks clearly.
-                    </span>
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      The application supports sending reminder notifications about events, work that needs to be done or is close to due, helping users complete work on time and improve the quality of their work.
-                    </span>
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Team size: 7.
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    My position: Developer.
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    My responsibilities:
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      Development
-                    </span>
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      Optimize code
-                    </span>
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      Bug fixing
-                    </span>
-                    <br/>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>
-                      <i class="bi bi-hexagon"></i>
-                      Maintainer
-                    </span>
-                  </span>
-                  <span class="prj-tech-stack">
-                    <i class="bi bi-hexagon-fill"></i>
-                    Technologies used:
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=html" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=css" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=js" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=ts" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=cs" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="./assets/skill-icons/devicon--primeng.svg" alt="cs-icon"/>
-                    <img class="exp-tech-stack-icon" src="./assets/skill-icons/devicon--ngrx.svg" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=dotnet" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=angular" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=kafka" alt="cs-icon"/>
-                  </span>
-                </div>
-              </div>
-              <div class="right-part-content prj-part">
-                <img class="prj-logo" src="./assets/Logo_BachelorThesis.png" alt="logo-BachelorThesis"/>
-                <span class="prj-belong-name">Bachelor's thesis: Building The Website System And Application For Selling Bus Tickets Using ASP.NET CORE 5 (Teamsize: 2)</span>
-                <span class="prj-time">08/2022 - 12/2022</span>
-                <div class="prj-part-detail">
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Developed a complete user interface using HTML, CSS, JavaScript, jQuery, Bootstrap, and Datatables.
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Rendered data to the UI via Ajax.
-                  </span>
-                  <span>
-                    <i class="bi bi-hexagon-fill"></i>
-                    Built service APIs with ASP.NET Core.
-                  </span>
-                  <span class="prj-tech-stack">
-                    <i class="bi bi-hexagon-fill"></i>
-                    Technologies used:
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=html" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=css" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=js" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=jquery" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=cs" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=dotnet" alt="cs-icon"/>
-                    <img class="prj-tech-stack-icon" src="https://skillicons.dev/icons?i=bootstrap" alt="cs-icon"/>
-                  </span>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
+      </div>
+          <div class="right-part section-projects">
+            <i class="bi bi-motherboard-fill"></i>
+            <div>
+              <div class="right-part-title">
+                KEY PROJECTS
+              </div>
+              <div class="right-part-content prj-part">
+                <img class="prj-logo" src="./assets/Logo_Amaris.jpeg" alt="Amaris Consulting logo"/>
+                <span class="prj-belong-name">Amaris Consulting: Enterprise Application Integration &amp; Migration</span>
+                <span class="prj-time">07/2026 - Present</span>
+                <div class="prj-part-detail">
+                  <div class="prj-meta">
+                    <span><strong>Domain:</strong> Insurance</span>
+                    <span><strong>Role:</strong> .NET Consultant</span>
+                  </div>
+                  <span><strong>Description:</strong> An enterprise M&amp;A integration project focused on transitioning existing insurance applications and services into a unified technology environment following a business acquisition.</span>
+                  <span class="prj-detail-title">Achievements:</span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Integrated OPSWAT REST APIs across multiple .NET applications to enhance file security and validation.
+                  </span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Upgraded OpenL Docker base images using GitHub Actions and JFrog Artifactory.
+                  </span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Remediated application security vulnerabilities identified through AppScan and source code assessments.
+                  </span>
+                  <span class="prj-tech-stack">
+                    <i class="bi bi-hexagon-fill"></i>
+                    Frameworks &amp; Technologies: C#, .NET, RESTful APIs, Autofac, GitHub Actions, Jenkins, JFrog, Nexus.
+                  </span>
+                </div>
+              </div>
+              <div class="right-part-content prj-part">
+                <img class="prj-logo" src="./assets/Logo_MAxOneLook.png" alt="MAx (v1 + v2) - Data Visualization &amp; Reporting System logo"/>
+                <span class="prj-belong-name">XSUNT Corp: MAx (v1 + v2) - Data Visualization &amp; Reporting System</span>
+                <span class="prj-time">12/2023 - 12/2025</span>
+                <div class="prj-part-detail">
+                  <div class="prj-meta">
+                    <span><strong>Domain:</strong> Business Intelligence (BI) &amp; CRM</span>
+                    <span><strong>Role:</strong> Web Developer</span>
+                  </div>
+                  <span><strong>Description:</strong> A CRM-based dashboard system for data visualization, reporting, and export.</span>
+                  <span class="prj-detail-title">Achievements:</span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Developed fullstack dashboard features using ASP.NET Core APIs and Vue.js for data visualization.
+                  </span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Automated PowerPoint and Excel reporting with dynamic data mapping.
+                  </span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Built a dynamic filtering interface to customize data queries and improve dashboard usability.
+                  </span>
+                  <span class="prj-tech-stack">
+                    <i class="bi bi-hexagon-fill"></i>
+                    Frameworks &amp; Technologies: Vue.js, ASP.NET, PptxGenJS, VXE-Table, ElementUI, HighChart, SQL Server
+                  </span>
+                </div>
+              </div>
+              <div class="right-part-content prj-part">
+                <img class="prj-logo" src="./assets/Logo_Reminder.png" alt="Reminder - Task &amp; Schedule Management System logo"/>
+                <span class="prj-belong-name">FPT Telecom: Reminder - Task &amp; Schedule Management System</span>
+                <span class="prj-time">04/2023 - 09/2023</span>
+                <div class="prj-part-detail">
+                  <div class="prj-meta">
+                    <span><strong>Domain:</strong> Task &amp; Workflow Management</span>
+                    <span><strong>Role:</strong> Web Developer</span>
+                  </div>
+                  <span><strong>Description:</strong> A task management system supporting task tracking, scheduling, and automated reminders.</span>
+                  <span class="prj-detail-title">Achievements:</span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Developed ASP.NET Core APIs integrated with Angular for task management workflows.
+                  </span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Implemented Quartz.NET scheduling for automated task execution and reminders.
+                  </span>
+                  <span>
+                    <i class="bi bi-hexagon-fill"></i>
+                    Improved workflow reliability through backend validation and business logic enhancements.
+                  </span>
+                  <span class="prj-tech-stack">
+                    <i class="bi bi-hexagon-fill"></i>
+                    Frameworks &amp; Technologies: .NET Core (C#), Quartz.NET, ADO.NET, NgRx, Angular, SQL Server
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
   </main>
+
+  <script src="./lib/pdf/html-to-image-1.11.13.js" defer></script>
+  <script src="./lib/pdf/jspdf-2.5.1.umd.min.js" defer></script>
+  <script src="./pdf-export.js" defer></script>
 </body>
 </html>
